@@ -1,0 +1,56 @@
+.axiomSpinnerSection {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+
+.spinnerContainer {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.spinnerContainer .axiomSpinner {
+  position: absolute;
+  top: 25vh;
+  left: 40vw;
+  width: 20%;
+  height: auto;
+  animation: spinning 4s linear 9;
+}
+
+.spinnerContainer .axiomText {
+  position: absolute;
+  opacity: 0;
+  top: 30vh;
+  left: 40vw;
+  width: 20%;
+  height: auto;
+  animation: text 3s linear 37s 1;
+}
+
+@keyframes spinning {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 50% 50%;
+  }
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
